@@ -12,8 +12,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    background: 'rgb(40, 42, 43)',
     height: '100%',
+    background: 'rgb(220,220,220)',
+
+
   },
   container: {
     position: 'relative',
@@ -41,9 +43,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundImage: Swoosh,
     backgroundSize: 'cover',
     width: '296px',
+    backgroundColor: 'rgb(48, 113, 246)',
+
+
     [theme.breakpoints.down('sm')]: {
       width: '100%',
       height: '100px',
@@ -100,15 +104,14 @@ const IntroContainer = (props: IntroContainerProps) => {
 
   return (
     <div className={classes.background}>
-      <TwilioLogo className={classes.twilioLogo} />
       {user && location.pathname !== '/login' && <UserMenu />}
       <div className={classes.container}>
         <div className={classes.innerContainer}>
           <div className={classes.swooshContainer}>
             <div className={classes.logoContainer}>
-              <VideoLogo />
+              <VideoLogo/>
               <Typography variant="h6" className={classes.title}>
-                Twilio Programmable Video
+                FoneMe Video
               </Typography>
             </div>
           </div>
