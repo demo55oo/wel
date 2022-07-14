@@ -47,7 +47,7 @@ declare global {
   }
 }
 
-// Bootstrap globals
+
 global.Twilio = require('twilio');
 global.Twilio.Response = TwilioResponse;
 global.Runtime = Runtime;
